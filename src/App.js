@@ -5,6 +5,7 @@ import { BoxForChildren } from './components/BoxForChildren';
 import NavBar from './components/NavBar';
 import Footer from "./components/Footer";
 import Main from "./components/Main"
+import BotonAgregar from './components/BotonAgregar';
 
 function App() {
   const background = {

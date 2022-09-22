@@ -5,7 +5,7 @@ import oreo from "../recursos/oreo.png";
 import pomelo from "../recursos/pomelo.png";
 import vainilla from "../recursos/vainilla.png";
 import logo from "../recursos/logohelado.png";
-import banner from "../recursos/bannerhelado.jpg";
+import banner from "../recursos/bannerhelado.png";
 
 export default {
     "img1": chocolate,

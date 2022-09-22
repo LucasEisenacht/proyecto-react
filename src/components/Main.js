@@ -1,8 +1,9 @@
 import imagenesHelados from "../recursos/imagenesHelados"
 
 const tamanioBanner = {
-    width: "100%",
-    height: "35rem",
+    margin:"3rem 13rem",
+    width: "80%",
+    height: "40rem",
 }
 
 const Main = () => {
