@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import Saludo from "./components/Saludo";
 import { BoxForChildren } from './components/BoxForChildren';
-import NavBar from './components/NavBar'
-import Footer from "./components/Footer"
+import NavBar from './components/NavBar';
+import Footer from "./components/Footer";
+import Main from "./components/Main"
 
 function App() {
   const background = {
@@ -20,6 +21,8 @@ function App() {
     <header  data-theme="cupcake">
     <NavBar></NavBar>
     {/* <h1 className="text-3xl font-bold underline">Hola mundo</h1> */}
+    <Main>
+    </Main>
     <BoxForChildren>
       <p>Este es un parrafo</p>
     </BoxForChildren>

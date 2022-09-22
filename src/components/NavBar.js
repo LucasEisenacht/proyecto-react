@@ -1,3 +1,9 @@
+import imagenesHelados from "../recursos/imagenesHelados"
+
+const tamanioLogo = {
+    width: "1.5rem",
+}
+
 const NavBar = () => {
     return (
     <div className="navbar bg-base-100">
@@ -14,7 +20,7 @@ const NavBar = () => {
         </div>
     </div>
     <div className="navbar-center">
-        <a className="btn btn-ghost normal-case text-xl font-mono hover:font-sans">Laura</a>
+        <a className="btn btn-ghost normal-case text-xl font-mono hover:font-sans">Laura - <img style={tamanioLogo} src={imagenesHelados.img7}></img> - </a>
     </div>
     <div className="navbar-end">
         <button className="btn btn-ghost btn-circle">
