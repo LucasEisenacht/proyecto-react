@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import Footer from "./components/Footer";
 import Main from "./components/Main"
 import BotonAgregar from './components/BotonAgregar';
+import ItemListContainer from './components/shop/ItemListContainer';
 
 function App() {
   const background = {
@@ -16,9 +17,13 @@ function App() {
     border: "solid 2px blue",
     padding: "20px",
   }
+
+  const colorLetra = {
+    color: "#000000",
+  }
   return (
     <>
-    
+    <ItemListContainer className="colorLetra" greeting="Mi Tienda"/>
     <header  data-theme="cupcake">
     <NavBar></NavBar>
     {/* <h1 className="text-3xl font-bold underline">Hola mundo</h1> */}
@@ -27,6 +32,7 @@ function App() {
     <BoxForChildren>
       <p>Este es un parrafo</p>
     </BoxForChildren>
+    
     </header>
     {/* <h2 style={ styles }>Subtitulo</h2>
     <Saludo name="Miguel" age={23}/>
