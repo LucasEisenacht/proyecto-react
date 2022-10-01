@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import Main from "./components/Main"
 import BotonAgregar from './components/BotonAgregar';
 import ItemListContainer from './components/shop/ItemListContainer';
+import StarWarsContainer from './components/starwars/StarWarsContainer';
+import RMContainer from './components/rickmorty/RMContainer';
 
 function App() {
   const background = {
@@ -38,6 +40,8 @@ function App() {
     <Saludo name="Miguel" age={23}/>
     <Saludo name="Lucas" age={25}/>
     <Saludo name="Jorge" age={18}/> */}
+    <StarWarsContainer/>
+    <RMContainer/>
     <Footer data-theme="cupcake">
     </Footer>
     </>
