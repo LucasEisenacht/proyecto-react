@@ -12,6 +12,8 @@ import RMContainer from './components/rickmorty/RMContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import  RMDetail  from "./components/rickmorty/RMDetail";
 import HeladosApi from './components/starwars/HeladosApi';
+import BannerHelados from './components/BannerHelados';
+
 
 function App() {
   const background = {
@@ -41,6 +43,8 @@ function App() {
       <Route path='/helados' element={<BoxForChildren></BoxForChildren>}></Route>
 
       <Route path={"/helados2"} element={<HeladosApi></HeladosApi>}></Route>
+
+    <Route path='/BannerHelados' element={<BannerHelados></BannerHelados>}></Route>
     </Routes>
     </BrowserRouter>
     <ItemListContainer className="colorLetra" greeting="Mi Tienda"/>
