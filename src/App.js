@@ -9,6 +9,9 @@ import BotonAgregar from './components/BotonAgregar';
 import ItemListContainer from './components/shop/ItemListContainer';
 import StarWarsContainer from './components/starwars/StarWarsContainer';
 import RMContainer from './components/rickmorty/RMContainer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import  RMDetail  from "./components/rickmorty/RMDetail";
+import HeladosApi from './components/starwars/HeladosApi';
 
 function App() {
   const background = {
@@ -25,23 +28,33 @@ function App() {
   }
   return (
     <>
-    <ItemListContainer className="colorLetra" greeting="Mi Tienda"/>
-    <header  data-theme="cupcake">
+    <BrowserRouter>
     <NavBar></NavBar>
+    <Routes>
+      <Route path='/' element={<header  data-theme="cupcake"/>}></Route>
+
+      <Route path={'/ram'} element={<RMContainer/>}></Route>
+
+      <Route path={'/ram/:id'} element={<RMDetail/>}></Route>
+
+
+      <Route path='/helados' element={<BoxForChildren></BoxForChildren>}></Route>
+
+      <Route path={"/helados2"} element={<HeladosApi></HeladosApi>}></Route>
+    </Routes>
+    </BrowserRouter>
+    <ItemListContainer className="colorLetra" greeting="Mi Tienda"/>
+    
+    
     {/* <h1 className="text-3xl font-bold underline">Hola mundo</h1> */}
     <Main>
     </Main>
-    <BoxForChildren>
-      <p>Este es un parrafo</p>
-    </BoxForChildren>
-    
-    </header>
+
     {/* <h2 style={ styles }>Subtitulo</h2>
     <Saludo name="Miguel" age={23}/>
     <Saludo name="Lucas" age={25}/>
     <Saludo name="Jorge" age={18}/> */}
     <StarWarsContainer/>
-    <RMContainer/>
     <Footer data-theme="cupcake">
     </Footer>
     </>

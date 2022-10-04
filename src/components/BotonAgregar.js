@@ -9,14 +9,12 @@ const BotonAgregar = () => {
         console.log("se monto el componente");
     }, [] )
 
-        const clickHandler = () => {
-                    setCounter( counter + 1 )
-    }
-
     return (
-        <div>
-            <button onClick={clickHandler} className="btn m-5 btn-primary">Agregar</button>
+        <div className="flex flex-row">
+            <button onClick={()=> setCounter(counter+1)} className="btn m-5 btn-primary">Agregar</button>
             <div className="badge badge-md"> {counter} </div>
+            <button onClick={()=> setCounter(counter-1)} className="btn m-5 btn-secondary">Quitar</button>
+
         </div>
     )
 }

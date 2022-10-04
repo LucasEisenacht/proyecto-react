@@ -1,13 +1,14 @@
 import axios from "axios"
 import { useState } from "react"
 import { useEffect } from "react"
+import { Link } from "react-router-dom"
 
-export const RMCard = ( {name, image} ) => {
+export const RMCard = ( {id, name, image} ) => {
     return (
-        <div>
+        <Link to={`/ram/${id}`}>
             <div>{name}</div>
             <img src={image}/>
-        </div>
+        </Link>
     )
 }
 

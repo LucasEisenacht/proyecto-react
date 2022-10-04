@@ -1,5 +1,4 @@
 import imagenesHelados from "../recursos/imagenesHelados"
-import BotonQuitar from "./BotonQuitar"
 import BotonAgregar from "./BotonAgregar"
 
 export const BoxForChildren = ( {children} ) => {
@@ -25,13 +24,16 @@ export const BoxForChildren = ( {children} ) => {
     return (
         <div  className=" bg-green-100 rounded-md border grid grid-cols-6 gap-1 justify-items-center" style={styles}>
             {/* {children} */}
-            <div className=" rounded-lg  flex flex-col" style={borde}>
+            <div className=" rounded-lg  flex-col" style={borde}>
                 <div className="flex justify-center" >
                     <img  src={imagenesHelados.img1} style={tamanio}></img>
                 </div>
-                <div className="flex flex-row justify-center">
-                    <BotonAgregar></BotonAgregar>
-                    <BotonQuitar></BotonQuitar>
+                <div className="flex justify-center">
+
+                        <BotonAgregar></BotonAgregar>
+
+                    
+
                 </div>
             </div>            <div className="rounded-lg  flex flex-col" style={borde}>
                 <div className="flex justify-center">
@@ -39,7 +41,7 @@ export const BoxForChildren = ( {children} ) => {
                 </div>
                 <div className="flex flex-row justify-center">
                     <BotonAgregar></BotonAgregar>
-                    <BotonQuitar></BotonQuitar>
+
                 </div>
             </div>            <div className="rounded-lg  flex flex-col" style={borde}>
                 <div className="flex justify-center">
@@ -47,7 +49,7 @@ export const BoxForChildren = ( {children} ) => {
                 </div>
                 <div className="flex flex-row justify-center">
                     <BotonAgregar></BotonAgregar>
-                    <BotonQuitar></BotonQuitar>
+
                 </div>
             </div>            <div className="rounded-lg  flex flex-col" style={borde}>
                 <div className="flex justify-center">
@@ -55,7 +57,6 @@ export const BoxForChildren = ( {children} ) => {
                 </div>
                 <div className="flex flex-row justify-center">
                     <BotonAgregar></BotonAgregar>
-                    <BotonQuitar></BotonQuitar>
                 </div>
             </div>            
             <div className="rounded-lg  flex flex-col" style={borde}>
@@ -64,7 +65,7 @@ export const BoxForChildren = ( {children} ) => {
                 </div>
                 <div className="flex flex-row justify-center">
                     <BotonAgregar></BotonAgregar>
-                    <BotonQuitar></BotonQuitar>
+
                 </div>
             </div>
         </div>

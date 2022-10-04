@@ -13,18 +13,18 @@ import { useEffect } from "react"
             const URL = "https://swapi.dev/api/people/"
                 fetch ( URL )
                     .then( response => response.json() )
+
                     
                     .then( data => {
-                        console.log(data.results);
                         setPeople(data.results)
-                    })
+                    }) 
         }
 
 
     return (
         <div>
             <h1>StarWars Container</h1>
-            {people.map(p => <li key={p.url}>{p.name}</li>)}
+            {people.map(p => <li key={p.id}>{p.name}</li>)}
 
         </div>
     )
