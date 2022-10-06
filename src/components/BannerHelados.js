@@ -3,6 +3,10 @@ import { hover } from "@testing-library/user-event/dist/hover"
 import { createRoutesFromElements } from "react-router-dom"
 import imagenesHelados from "../recursos/imagenesHelados"
 import BotonAgregar from '../components/BotonAgregar';
+import { products } from "./products/Products";
+import react, {useEffect, useState} from "react"
+import ItemsCard from "./products/ItemsCards";
+
 
 const width = {
   width: 1200,
@@ -30,8 +34,9 @@ const boton ={
 }
 
 const BannerHelados = () => {
-  return (
-    <>
+      return (
+        <>
+    
     <div style={center}>
       <figure  className="shadow-inner drop-shadow-2xl flex justify-end bg-green-300 bg-gradient-to-r from-green-300 to-black-400 hover:from-white hover:to-green-300 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110  duration-300" style={width} >
           <div style={titulo} className="font-mono text-[50px] italic text-black-600/25  card-title">
@@ -83,6 +88,7 @@ const BannerHelados = () => {
         <img src={imagenesHelados.ddl}/>
       </figure>
     </div>
+  
   </>
     
   )

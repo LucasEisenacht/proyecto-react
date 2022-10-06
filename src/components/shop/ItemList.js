@@ -1,36 +1,36 @@
+import React, {useEffect, useState} from "react"
+import {products} from "../products/Products"
+import ItemCard from "../shop/ItemCard"
 
+
+const ItemList = () => {
     
-        const products = [
-        {id: 1, name:"mouse", price:"20"},
-        {id: 2, name:"teclado", price:"30"},
-        {id: 3, name:"monitor", price:"250"},
-        ]
+    const [items, setItems] = useState([])
         
-        const ItemList = ( { greeting } ) => {
-        
-        useEffect( ()=>{
-            getProducts()
-        },[] )
-        
-        const getProducts = () => {
-            const productsPromise = new Promise( (resolve, reject)=>{
-            const rand = Math.random()
-            console.log(rand);
-            if (rand > 0.5) {
-                resolve("success")
-            }
-            reject("fail")
-            } )
-        
-            productsPromise
-            .then( res => {
-                console.log("res:" + res );
-            })
-            .catch ( err => {
-            console.log("err: " + err);} )
-        
-            console.log("Trayendo productos...");
-        }
-        
+        useEffect(() => {
+        getProducts().then( response => {
+            console.log(response);
+            setItems(response)
+        })
+        }, [])
+    
+        const getProducts = () => { 
+        return new Promise (resolve => {
+            setTimeout(() => {
+            resolve(products)
+            },3000);
+        })
+    }
+
+
+return (
+    <>
+    <div>
+        <h1>Items</h1>
+        {items.map( i => <ItemCard key={i.id} {...i}/>)}
+    </div>
+</>
+)
 }
-export default ItemList
+
+export default {ItemList}

@@ -9,10 +9,12 @@ import BotonAgregar from './components/BotonAgregar';
 import ItemListContainer from './components/shop/ItemListContainer';
 import StarWarsContainer from './components/starwars/StarWarsContainer';
 import RMContainer from './components/rickmorty/RMContainer';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import  RMDetail  from "./components/rickmorty/RMDetail";
 import HeladosApi from './components/starwars/HeladosApi';
 import BannerHelados from './components/BannerHelados';
+import ItemList from "./components/shop/ItemList"
+import ItemDetail from './components/shop/ItemDetail';
 
 
 function App() {
@@ -39,25 +41,20 @@ function App() {
 
       <Route path={'/ram/:id'} element={<RMDetail/>}></Route>
 
-
       <Route path='/helados' element={<BoxForChildren></BoxForChildren>}></Route>
 
       <Route path={"/helados2"} element={<HeladosApi></HeladosApi>}></Route>
+  
+      <Route path={'/shop/ItemDetail'} element={<ItemDetail></ItemDetail>}></Route>
+
+      <Route path={'/shop/ItemList'} element={<ItemList></ItemList>}></Route>
 
     <Route path='/BannerHelados' element={<BannerHelados></BannerHelados>}></Route>
     </Routes>
     </BrowserRouter>
     <ItemListContainer className="colorLetra" greeting="Mi Tienda"/>
-    
-    
-    {/* <h1 className="text-3xl font-bold underline">Hola mundo</h1> */}
     <Main>
     </Main>
-
-    {/* <h2 style={ styles }>Subtitulo</h2>
-    <Saludo name="Miguel" age={23}/>
-    <Saludo name="Lucas" age={25}/>
-    <Saludo name="Jorge" age={18}/> */}
     <StarWarsContainer/>
     <Footer data-theme="cupcake">
     </Footer>
