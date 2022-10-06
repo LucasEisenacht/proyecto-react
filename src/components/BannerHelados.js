@@ -36,7 +36,7 @@ const boton ={
 const BannerHelados = () => {
       return (
         <>
-    
+    <div data-theme="cupcake">
     <div style={center}>
       <figure  className="shadow-inner drop-shadow-2xl flex justify-end bg-green-300 bg-gradient-to-r from-green-300 to-black-400 hover:from-white hover:to-green-300 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110  duration-300" style={width} >
           <div style={titulo} className="font-mono text-[50px] italic text-black-600/25  card-title">
@@ -50,8 +50,8 @@ const BannerHelados = () => {
     </div>
     <div style = {center}>
       <figure  className="shadow-inner drop-shadow-2xl flex justify-end bg-yellow-100 bg-gradient-to-r from-white to-black-400 hover:from-white hover:to-yellow-200 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110  duration-300" style={width} >
-        <div style={titulo} className="font-mono text-[45px] italic text-black-600/25  card-title"><h1 className="ml-20">Americana</h1>
-        <div style={boton} className="ml-20">
+        <div style={titulo} className="font-mono text-[45px] italic text-black-600/25  card-title"><h1 className="mx-32">Americana</h1>
+        <div style={boton} className="my-64">
         <BotonAgregar></BotonAgregar>
         </div>
         </div>
@@ -61,7 +61,7 @@ const BannerHelados = () => {
     <div style = {center}>
       <figure  className="shadow-inner drop-shadow-2xl flex justify-end bg-amber-900 bg-gradient-to-r from-yellow-800  hover:from-amber-600 hover:to-yellow-900 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110  duration-300" style={width} >
         <div style={titulo} className="font-mono text-[45px] italic text-black-600/25  card-title"><h1 className="ml-11">Chocolate</h1>
-        <div style={boton} className="ml-20" >
+        <div style={boton} className="mx-20" >
         <BotonAgregar></BotonAgregar>
         </div>
         </div>
@@ -81,14 +81,14 @@ const BannerHelados = () => {
     <div style = {center}>
       <figure  className="shadow-inner drop-shadow-2xl flex justify-end bg-amber-900 bg-gradient-to-r from-yellow-700  hover:from-amber-500 hover:to-yellow-900 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110  duration-300" style={width} >
         <div style={titulo} className="font-mono text-[45px] italic text-black-600/25  card-title"><h1 className="ml-11">Dulce De Leche </h1>
-        <div style={boton} className="ml-20" >
+        <div style={boton} className="mx-40" >
         <BotonAgregar></BotonAgregar>
         </div>
         </div>
         <img src={imagenesHelados.ddl}/>
       </figure>
     </div>
-  
+  </div>
   </>
     
   )

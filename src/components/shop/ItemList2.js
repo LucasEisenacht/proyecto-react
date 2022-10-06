@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+/* import { useEffect, useState } from "react"
 import ItemCard from "./ItemCard"
 
 const products = [
@@ -41,4 +41,4 @@ const ItemList2 = () => {
     </div>
   )
 }
-export default ItemList2
+export default ItemList2 */

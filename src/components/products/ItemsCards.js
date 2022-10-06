@@ -1,4 +1,4 @@
-import React from "react"
+/* import React from "react"
 import { Link } from "react-router-dom"
 
 const ItemCard = ({id, precio}) => {
@@ -13,4 +13,4 @@ const ItemCard = ({id, precio}) => {
         </Link>
     )
 }
-export default ItemCard  
+export default ItemCard   */

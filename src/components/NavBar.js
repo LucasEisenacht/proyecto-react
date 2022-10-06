@@ -7,6 +7,7 @@ const tamanioLogo = {
 
 const NavBar = () => {
     return (
+<div data-theme="cupcake">
         <div className="navbar bg-base-100">
     <div className="flex-1">
         <Link to="/" className="btn btn-ghost normal-case text-xl">Laura - <img style={tamanioLogo} src={imagenesHelados.img7}></img> - </Link>
@@ -41,12 +42,13 @@ const NavBar = () => {
                 Helados
             </a>
             </li>
-            <li><a>Settings</a></li>
+            <li><a href="./shop">SShop 2</a></li>
             <li><a>Logout</a></li>
         </ul>
         </div>
     </div>
     </div>
+</div>
     )
 }
 export default NavBar

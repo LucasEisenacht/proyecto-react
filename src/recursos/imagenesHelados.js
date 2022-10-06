@@ -5,7 +5,7 @@ import oreo from "../recursos/oreo.png";
 import pomelo from "../recursos/pomelo.png";
 import vainilla from "../recursos/vainilla.png";
 import logo from "../recursos/logohelado.png";
-import banner from "../recursos/bannerhelado.png";
+import bannerhelado from "../recursos/bannerhelado.jpg";
 import menta from "../recursos/menta.png"
 import americana from "../recursos/americana.png"
 import ddl from "../recursos/ddl.png"
@@ -18,7 +18,7 @@ export default {
     "img5": pomelo,
     "img6": vainilla,
     "img7": logo,
-    "img8": banner,
+    "bannerhelado": bannerhelado,
     "menta": menta,
     "americana": americana,
     "ddl" : ddl,

@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Saludo from "./components/Saludo";
+
 import { BoxForChildren } from './components/BoxForChildren';
 import NavBar from './components/NavBar';
 import Footer from "./components/Footer";
@@ -9,7 +9,7 @@ import BotonAgregar from './components/BotonAgregar';
 import ItemListContainer from './components/shop/ItemListContainer';
 import StarWarsContainer from './components/starwars/StarWarsContainer';
 import RMContainer from './components/rickmorty/RMContainer';
-import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import  RMDetail  from "./components/rickmorty/RMDetail";
 import HeladosApi from './components/starwars/HeladosApi';
 import BannerHelados from './components/BannerHelados';
@@ -19,7 +19,7 @@ import ItemDetail from './components/shop/ItemDetail';
 
 function App() {
   const background = {
-    color: "#EDE1F2"
+    color: "#faf7f5"
   }
 
   const styles = {
@@ -32,30 +32,28 @@ function App() {
   }
   return (
     <>
-    <BrowserRouter>
-    <NavBar></NavBar>
+    <BrowserRouter >
+    <NavBar ></NavBar>
     <Routes>
       <Route path='/' element={<header  data-theme="cupcake"/>}></Route>
 
-      <Route path={'/ram'} element={<RMContainer/>}></Route>
+      <Route path={'/ram'} element={<RMContainer data-theme="cupcake"/>}></Route>
 
-      <Route path={'/ram/:id'} element={<RMDetail/>}></Route>
+      <Route path={'/ram/:id'} element={<RMDetail data-theme="cupcake"/>}></Route>
 
-      <Route path='/helados' element={<BoxForChildren></BoxForChildren>}></Route>
-
-      <Route path={"/helados2"} element={<HeladosApi></HeladosApi>}></Route>
+      <Route path='/helados' element={<BoxForChildren data-theme="cupcake"></BoxForChildren>}></Route>
   
-      <Route path={'/shop/ItemDetail'} element={<ItemDetail></ItemDetail>}></Route>
+      <Route path={'/shop/ItemDetail'} element={<ItemDetail data-theme="cupcake"></ItemDetail>}></Route>
 
-      <Route path={'/shop/ItemList'} element={<ItemList></ItemList>}></Route>
-
-    <Route path='/BannerHelados' element={<BannerHelados></BannerHelados>}></Route>
+      <Route path={"/shop/"} element={<ItemList data-theme="cupcake"/>}></Route>
+      
+      <Route path={"/shop/item/:id"} element={<ItemDetail data-theme="cupcake"/>}></Route>
+      
+    <Route path='/BannerHelados' element={<BannerHelados data-theme="cupcake"></BannerHelados>}></Route>
     </Routes>
     </BrowserRouter>
-    <ItemListContainer className="colorLetra" greeting="Mi Tienda"/>
-    <Main>
+    <Main className="bg-#faf7f5">
     </Main>
-    <StarWarsContainer/>
     <Footer data-theme="cupcake">
     </Footer>
     </>

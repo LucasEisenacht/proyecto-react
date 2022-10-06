@@ -1,4 +1,4 @@
-import { useState } from "react"
+/* import { useState } from "react"
 import { useEffect } from "react"
 
 const HeladosApi = () => {
@@ -28,4 +28,4 @@ const getHelados = () => {
         </div>
     )
     }
-export default HeladosApi
+export default HeladosApi */
